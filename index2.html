@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bar Chart Project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <a href="http://jquery.com/">jQuery</a>
+    
+    <p>test 1</p>
+    <dl>
+        <dt>A title of the graph</dt>
+            <dd class="percentage">
+              <span class="text">
+                Data 1: 20%
+              </span>
+            </dd>
+            <dd class="percentage">
+              <span class="text">
+                Data 2: 50%
+              </span>
+            </dd>
+            <dd class="percentage">
+              <span class="text">
+                Data 3: 30%
+              </span>
+        </dd>
+    </dl>
+          <script>$("p").on({
+            mouseenter: function(){
+              $(this).css("background-color", "lightgray");
+            },
+            mouseleave: function(){
+              $(this).css("background-color", "lightblue");
+            },
+            click: function(){
+              $(this).css("background-color", "yellow");
+            }
+          });</script>
+          <table id="q-graph">
+            <caption>Quarterly Results</caption>
+            <thead>
+                <tr>
+                 <th></th>
+                    <th class="sent">Invoiced</th>
+                    <th class="paid">Collected</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="qtr" id="q1">
+                <th scope="row">Q1</th>
+                <td class="sent bar"><p>$18,450.00</p></td>
+                <td class="paid bar"><p>$16,500.00</p></td>
+            </tr>
+                <tr class="qtr" id="q2">
+                <th scope="row">Q2</th>
+                <td class="sent bar"><p>$34,340.72</p></td>
+                <td class="paid bar"><p>$32,340.72</p></td>
+            </tr>
+            <tr class="qtr" id="q3">
+                <th scope="row">Q3</th>
+                <td class="sent bar"><p>$43,145.52</p></td>
+                <td class="paid bar"><p>$32,225.52</p></td>
+            </tr>
+            <tr class="qtr" id="q4">
+                <th scope="row">Q4</th>
+                <td class="sent bar"><p>$18,415.96</p></td>
+                <td class="paid bar"><p>$32,425.00</p></td>
+            </tr>
+            </tbody>
+        </table>
+        <ul class="chartlist">
+            <li>
+              <a href="http://www.example.com/fruits/apples/">Apples</a> 
+              <span class="count">420</span>
+              <span class="index">(42%)</span>
+            </li>
+            <li>
+              <a href="http://www.example.com/fruits/bananas/"> »
+              Bananas</a> 
+              <span class="count">280</span>
+              <span class="index">(28%)</span>
+            </li>
+            <li>
+              <a href="http://www.example.com/fruits/cherries/"> »
+              Cherries</a> 
+              <span class="count">200</span>
+              <span class="index">(20%)</span>
+            </li>
+            <li>
+              <a href="http://www.example.com/fruits/dates/">Dates</a> 
+              <span class="count">100</span>
+              <span class="index">(10%)</span>
+            </li>
+          </ul>
+        </body>
+</html>
